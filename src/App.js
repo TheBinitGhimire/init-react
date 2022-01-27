@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import Handle from "./Handle";
+import Email, { PersonalEmail } from "./Email";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main className="mainContainer">
+        <section id="handles">
+          <Handle
+            icon="FaGithub"
+            name="GitHub"
+            url="https://github.com/TheBinitGhimire/"
+          />
+          <Handle
+            icon="FaLinkedin"
+            name="LinkedIn"
+            url="https://www.linkedin.com/in/thebinitghimire/"
+          />
+        </section>
+        <section id="email">
+          <PersonalEmail
+            username="thebinitghimire@gmail.com"
+            provider="Google"
+            text="My Personal E-mail"
+          />
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <Email
+            username="binitghimire"
+            domain="lftechnology.com"
+            text="My Corporate E-mail"
+          />
+        </section>
+      </main>
     </div>
   );
 }
