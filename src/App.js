@@ -25,7 +25,7 @@ function App() {
         </section>
         <section id="email">
           <PersonalEmail
-            username="thebinitghimire@gmail.com"
+            username="thebinitghimire"
             provider="Google"
             text="My Personal E-mail"
           />
