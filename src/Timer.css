@@ -1,0 +1,15 @@
+h1, h2, button {
+  margin: 8px;
+}
+
+h1 {
+  font-size: 128px;
+}
+
+button {
+  font-size: 24px;
+}
+
+button:last-child {
+  margin-left: 18px;
+}

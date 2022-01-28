@@ -1,5 +1,6 @@
 import "./App.css";
 
+import Timer from "./Timer";
 import Handle from "./Handle";
 import Email, { PersonalEmail } from "./Email";
 
@@ -7,6 +8,9 @@ function App() {
   return (
     <div className="App">
       <main className="mainContainer">
+        <section id="timer">
+          <Timer />
+        </section>
         <section id="handles">
           <Handle
             icon="FaGithub"
